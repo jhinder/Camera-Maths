@@ -12,6 +12,7 @@
 		3DA3251F1D2ECE4600A3566C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA3251D1D2ECE4600A3566C /* Main.storyboard */; };
 		3DA325211D2ECE4600A3566C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DA325201D2ECE4600A3566C /* Assets.xcassets */; };
 		3DA325241D2ECE4600A3566C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA325221D2ECE4600A3566C /* LaunchScreen.storyboard */; };
+		3DA3252C1D2ED34900A3566C /* Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA3252B1D2ED34900A3566C /* Logic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		3DA325201D2ECE4600A3566C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DA325231D2ECE4600A3566C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DA325251D2ECE4600A3566C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DA3252B1D2ED34900A3566C /* Logic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				3DA325191D2ECE4600A3566C /* AppDelegate.swift */,
 				3DA3251B1D2ECE4600A3566C /* ViewController.swift */,
+				3DA3252B1D2ED34900A3566C /* Logic.swift */,
 				3DA3251D1D2ECE4600A3566C /* Main.storyboard */,
 				3DA325201D2ECE4600A3566C /* Assets.xcassets */,
 				3DA325221D2ECE4600A3566C /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DA3251C1D2ECE4600A3566C /* ViewController.swift in Sources */,
+				3DA3252C1D2ED34900A3566C /* Logic.swift in Sources */,
 				3DA3251A1D2ECE4600A3566C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
