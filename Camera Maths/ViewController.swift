@@ -40,7 +40,7 @@ class ViewController: UITableViewController {
         let maxStableInverted = Int(1 / maxStable)
         
         fullFormatSizeLabel.text = "\(cropped)"
-        maxExposureTimeLabel.text = "\(maxStable) (1/\(maxStableInverted))"
+        maxExposureTimeLabel.text = "1/\(maxStableInverted)"
     }
     
     var currentCropFactor : Float {
