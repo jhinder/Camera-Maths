@@ -14,8 +14,8 @@ class Logic {
         return cropFactor * Float(focalLength)
     }
     
-    class func maxStableImage(cropFactor: Float, focalLength: Int) -> Float {
-        return (1.0 / Float(focalLength)) * cropFactor
+    class func maxStableImage(cropFactor: Float, focalLength: Int, imageStabilizer: Int) -> Float {
+        return ((1.0 / (Float(focalLength) * cropFactor)) * Float(imageStabilizer))
     }
     
 }

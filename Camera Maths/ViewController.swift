@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UITableViewController {
 
     @IBOutlet weak var cropFactorControl: UISegmentedControl!
+    @IBOutlet weak var imageStabilizerControl: UISegmentedControl!
     @IBOutlet weak var focalLengthLabel: UILabel!
     @IBOutlet weak var focalLengthSlider: UISlider!
     
@@ -34,9 +35,13 @@ class ViewController: UITableViewController {
         updateResults()
     }
     
+    @IBAction func imageStabilizerChanged(sender: UISegmentedControl) {
+        updateResults()
+    }
+    
     func updateResults() {
         let cropped = Logic.cropResult(currentCropFactor, focalLength: currentFocalLength)
-        let maxStable = Logic.maxStableImage(currentCropFactor, focalLength: currentFocalLength)
+        let maxStable = Logic.maxStableImage(currentCropFactor, focalLength: currentFocalLength, imageStabilizer: currentImageStabilizer)
         let maxStableInverted = Int(1 / maxStable)
         
         fullFormatSizeLabel.text = "\(cropped)"
@@ -52,6 +57,15 @@ class ViewController: UITableViewController {
         }
     }
     
+    var currentImageStabilizer : Int {
+        switch imageStabilizerControl.selectedSegmentIndex {
+        case 0: return 1
+        case 1: return 4
+        case 2: return 8
+        default: return 1
+        }
+    }
+
     var currentFocalLength : Int {
         return Int(focalLengthSlider.value)
     }
